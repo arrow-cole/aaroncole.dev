@@ -7,38 +7,38 @@
   cursor: pointer;
   @include easeOut;
 
+  .btn-line width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: set-text-color($primary-color);
+  box-shadow: 1px 1px 5px $secondary-color;
+  @include easeOut;
+}
+
+// Rotate Into X With Menu Lines
+&.close {
+  transform: rotate(180deg);
+
   .btn-line {
-    width: 28px;
-    height: 3px;
-    margin: 0 0 5px 0;
-    background: set-text-color($primary-color);
-    box-shadow: 1px 1px 5px $secondary-color;
-    @include easeOut;
-  }
+    box-shadow: none;
 
-  // Rotate Into X With Menu Lines
-  &.close {
-    transform: rotate(180deg);
+    // Line 1 - Rotate
+    &:nth-child(1) {
+      background-color: $secondary-color;
+      transform: rotate(45deg) translate(5px, 5px);
+    }
 
-    .btn-line {
-      box-shadow: none;
-      // Line 1 - Rotate
-      &:nth-child(1) {
-        background-color: $secondary-color;
-        transform: rotate(45deg) translate(5px, 5px);
-      }
+    // Line 2 - Hide
+    &:nth-child(2) {
+      opacity: 0;
+    }
 
-      // Line 2 - Hide
-      &:nth-child(2) {
-        opacity: 0;
-      }
-
-      // Line 3 - Rotate
-      &:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -6px);
-      }
+    // Line 3 - Rotate
+    &:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px);
     }
   }
+}
 }
 
 // Menu Overlay
@@ -109,7 +109,7 @@
       transform: translate3d(0, 0, 0);
     }
 
-    &.current > a {
+    &.current>a {
       color: $secondary-color;
     }
   }
