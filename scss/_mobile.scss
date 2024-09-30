@@ -1,0 +1,94 @@
+//widescreens
+@include mediaXl {
+    .projects {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  //Desktops
+  @include mediaLg {
+    .projects {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  //Tablets
+  @include mediaMd {
+    main {
+      align-items: center;
+      text-align: center;
+  
+      .lg-heading {
+        line-height: 1;
+        margin-bottom: 1rem;
+      }
+    }
+  
+    ul.menu-nav,
+    div.menu-branding {
+      float: none;
+      width: 100%;
+      min-height: 0;
+    }
+  
+    .menu-nav {
+      height: 75vh;
+    }
+  
+    .menu-branding {
+      height: 25vh;
+  
+      .portrait {
+        background-image: url(../img/portraitSm.jpg);
+        //background: url("../dist/img/portraitSm.jpg");
+        width: 150px;
+        height: 140px;
+      }
+    }
+  
+    .about-info {
+      grid-template-areas:
+        "bioimage"
+        "bio"
+        "job1"
+        "job2"
+        "job3";
+      grid-template-columns: 1fr;
+    }
+  
+    .projects {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  //phones
+  @include mediaSm {
+    main#home h1 {
+      font-size: 4rem;
+      margin-top: 10vh;
+    }
+  
+    #home .sm-heading {
+      font-size: 2rem;
+    }
+  
+    .projects {
+      grid-template-columns: 1fr;
+    }
+  
+    .boxes {
+      div {
+        font-size: 1rem;
+      }
+    }
+  
+    main {
+      padding: 4rem 1rem;
+    }
+  
+    .about-info {
+      .bio {
+        font-size: 1.25rem;
+      }
+    }
+  }
