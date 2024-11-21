@@ -18,16 +18,5 @@ The website serves as:
 
 ## Technology Stack
 
-- **Frontend**: HTML, CSS, JavaScript (and any framework like React or Vue if applicable).
-- **Backend**: (Optional—mention if the site has backend features like Node.js, Django, etc.)
-- **Hosting**: Deployed on [hosting provider, e.g., Vercel, Netlify, GitHub Pages].
-- **Additional Tools**: (Optional—mention any tools used like Tailwind CSS, Webpack, or API integrations.)
-
-## Installation & Setup
-
-If you want to clone and run this website locally:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/username/aaroncole.dev.git
-   cd aaroncole.dev
+- **Frontend**: HTML, CSS, JavaScript, Sass.
+- **Hosting**: Deployed on Github Pages.
