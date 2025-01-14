@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
-
+        integrity="sha384-hWVjflwFxL6sNzntih27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
     <link rel="stylesheet" href="dist/css/main.1.css" />
+    <link rel="stylesheet" href="dist/css/main.4.css" /> <!-- Banner CSS -->
     <link rel="icon" href="dist/img/favicon.png" type="image/x-icon"> <!-- Favicon Link -->
     <title>Welcome To My Portfolio</title>
 </head>
@@ -51,6 +51,11 @@
         </nav>
     </header>
 
+    <!-- Banner Section (Controlled by data-visible) -->
+    <div id="banner" class="banner" data-visible="true">
+        <h1>New Blog Out @ Aaroncole.vip!</h1>
+    </div>
+
     <main id="home">
         <h1 class="lg-heading">
             Aaron <span class="text-secondary">Cole</span>
@@ -58,7 +63,7 @@
         <h2 class="sm-heading">
             The
             <span class="txt-type" data-wait="3000"
-            data-words="[&quot;Developer&quot;, &quot;Designer&quot;, &quot;Builder&quot;, &quot;Coder&quot;]"></span>
+                data-words="[&quot;Developer&quot;, &quot;Designer&quot;, &quot;Builder&quot;, &quot;Coder&quot;]"></span>
         </h2>
         <div class="icons">
             <a href="https://www.codecademy.com/profiles/arrow_cole" target="_blank">
@@ -79,6 +84,15 @@
         </div>
     </main>
 
+    <script>
+        // Control banner visibility based on the `data-visible` attribute
+        document.addEventListener("DOMContentLoaded", () => {
+            const banner = document.getElementById("banner");
+            const isVisible = banner.getAttribute("data-visible") === "true";
+
+            banner.style.display = isVisible ? "block" : "none";
+        });
+    </script>
     <script src="dist/js/main.js"></script>
 </body>
 
