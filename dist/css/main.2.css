@@ -1,4 +1,6 @@
-/* General reset and body styling */
+/* Kiosk CSS File */
+
+/* General reset */
 * {
     margin: 0;
     padding: 0;
@@ -7,48 +9,46 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    background: linear-gradient(120deg, #ff9a9e, #fad0c4);
     color: #333;
-    height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
 }
 
-/* Main container for the Thank You message */
-.thank-you-container {
-    background-color: #ffffff;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.container {
     text-align: center;
+    background: #ffffffdd;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-/* Styling the heading */
-.thank-you-message h1 {
-    font-size: 36px;
-    color: #000;
+h1 {
+    font-size: 2.5rem;
+    color: #03eeff;
     margin-bottom: 20px;
 }
 
-/* Styling the paragraph */
-.thank-you-message p {
-    font-size: 18px;
+p {
+    font-size: 1.2rem;
     margin-bottom: 30px;
-    color: #555;
 }
 
-/* Styling the return button */
-.return-home {
-    text-decoration: none;
+a {
+    display: inline-block;
     padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: white;
+    color: #ffffff;
+    background-color: #3498db;
+    text-decoration: none;
     border-radius: 5px;
+    font-size: 1rem;
     transition: background-color 0.3s;
 }
 
-.return-home:hover {
-    background-color: #0056b3;
+a:hover {
+    background-color: #1d6fa5;
 }

@@ -1,52 +1,32 @@
-/* General reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Banner CSS File */
 
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(120deg, #ff9a9e, #fad0c4);
-    color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    overflow: hidden;
-}
+/* Banner Styling */
+        .banner {
+            width: 100%; /* Full-width */
+            background-color: #4CAF50; /* Banner Background Color */
+            color: white; /* Text Color */
+            text-align: center; /* Center the Text */
+            padding: 20px 0; /* Top and Bottom Padding */
+            position: relative; /* Ensure it's positioned relative to its container */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        }
 
-.container {
-    text-align: center;
-    background: #ffffffdd;
-    padding: 20px 40px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-}
+        .banner h1 {
+            font-size: 2.5rem; /* Main Heading Size */
+            margin: 0; /* Remove default margin */
+        }
 
-h1 {
-    font-size: 2.5rem;
-    color: #03eeff;
-    margin-bottom: 20px;
-}
+        .banner p {
+            font-size: 1.2rem; /* Subheading Size */
+            margin: 5px 0 0; /* Adjust margins for spacing */
+        }
 
-p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
+        @media (max-width: 768px) {
+            .banner h1 {
+                font-size: 2rem; /* Adjust heading size for smaller screens */
+            }
 
-a {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #ffffff;
-    background-color: #3498db;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: background-color 0.3s;
-}
-
-a:hover {
-    background-color: #1d6fa5;
-}
+            .banner p {
+                font-size: 1rem; /* Adjust paragraph size for smaller screens */
+            }
+        }

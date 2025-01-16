@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
         integrity="sha384-hWVjflwFxL6sNzntih27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
     <link rel="stylesheet" href="dist/css/main.1.css" />
-    <link rel="stylesheet" href="dist/css/main.4.css" /> <!-- Banner CSS -->
+    <link rel="stylesheet" href="dist/css/main.3.css" /> <!-- Banner CSS -->
     <link rel="icon" href="dist/img/favicon.png" type="image/x-icon"> <!-- Favicon Link -->
     <title>Welcome To My Portfolio</title>
 </head>
@@ -45,7 +45,10 @@
                     <a href="Schedule/index.html" class="nav-link"> Schedule</a>
                 </li>
                 <li class="nav-item">
-                    <a href="https://aaroncole.vip" class="nav-link"> Blog</a>
+                    <a href="https://aaroncole.vip" class="nav-link"> Old Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://aaroncole.blog" class="nav-link"> New Blog</a>
                 </li>
             </ul>
         </nav>
@@ -88,7 +91,7 @@
         // Control banner visibility based on the `data-visible` attribute
         document.addEventListener("DOMContentLoaded", () => {
             const banner = document.getElementById("banner");
-            const isVisible = banner.getAttribute("data-visible") === "true";
+            const isVisible = banner.getAttribute("data-visible") === "false";
 
             banner.style.display = isVisible ? "block" : "none";
         });
