@@ -20,3 +20,4 @@ The website serves as:
 
 - **Frontend**: HTML, CSS, JavaScript, Sass.
 - **Hosting**: Deployed on Github Pages.
+- **Admin Hosting**: Runned Local
