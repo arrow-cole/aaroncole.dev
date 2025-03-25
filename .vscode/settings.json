@@ -1,9 +1,5 @@
 {
-    // hosting 
-    "liveServer.settings.host": "localhost",
+    // Removed all live server settings
     "fiveServer.host": "localhost",
-    // ports
-    "liveServer.settings.port": 8080,
     "fiveServer.port": 10
-
 }
