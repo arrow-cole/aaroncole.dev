@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Rotation</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            font-size: 1.5rem;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Schedule</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Names</th>
+                    <th>Start Time</th>
+                    <th>End Time</th>
+                </tr>
+            </thead>
+            <tbody id="scheduleBody">
+            </tbody>
+        </table>
+        <button id="resetButton" onclick="resetSchedule()">Reset Interval</button>
+    </div>
+    
+    <script>
+        const names = ["Will & Jerry & Jackson", "Grace & Brennen", "Nate & Drew"];
+        const scheduleBody = document.getElementById("scheduleBody");
+        const resetButton = document.getElementById("resetButton");
+        let baseTime = new Date();
+        
+        function generateSchedule() {
+            scheduleBody.innerHTML = "";
+            for (let i = 0; i < names.length; i++) {
+                const startTime = new Date(baseTime.getTime() + i * 1800000); // 30 min interval
+                const endTime = new Date(startTime.getTime() + 1800000); // 30 min duration
+                const startString = startTime.toLocaleTimeString();
+                const endString = endTime.toLocaleTimeString();
+                const row = `<tr><td>${names[i]}</td><td>${startString}</td><td>${endString}</td></tr>`;
+                scheduleBody.innerHTML += row;
+            }
+        }
+        
+        function resetSchedule() {
+            baseTime = new Date();
+            generateSchedule();
+        }
+        
+        function checkURL() {
+            if (window.location.href === "https://aaroncole.dev/robotics/times") {
+                resetButton.style.display = "block";
+            }
+        }
+        
+        checkURL();
+        generateSchedule();
+    </script>
+</body>
+</html>
