@@ -1,6 +1,6 @@
 // make sure to include , after each game score
 const scores = {
-      day1: [200],
+      day1: [],
       day2: [],
       day3: [],
       day4: []
