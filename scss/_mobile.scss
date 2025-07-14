@@ -39,10 +39,19 @@
       height: 25vh;
   
       .portrait {
+        
+         width: 350px;
+        height: 350px;
+        margin: 0 auto;
+        background-size: cover;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-color: #444;
+        background-attachment: fixed;
         background-image: url(../img/portraitSm.jpg);
-        //background: url("../dist/img/portraitSm.jpg");
-        width: 150px;
-        height: 140px;
+        border-radius: 50%;
+        border: solid 3px #fe015e;
+
       }
     }
   
