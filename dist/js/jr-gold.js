@@ -1,8 +1,9 @@
- const scores = {
-      day1: [200, 210, 198, 190],
-      day2: [205, 202, 200, 199],
-      day3: [180, 175, 195, 190],
-      day4: [220, 230, 210, 215]
+// make sure to include , after each game score
+const scores = {
+      day1: [],
+      day2: [],
+      day3: [],
+      day4: []
     };
 
     const baseScore = 200;
