@@ -6,7 +6,7 @@
             background-color: #2786c2; /* Banner Background Color */
             color: white; /* Text Color */
             text-align: center; /* Center the Text */
-            padding: 20px 0; /* Top and Bottom Padding */
+            padding: 15px 0; /* Top and Bottom Padding */
             position: relative; /* Ensure it's positioned relative to its container */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
         }
