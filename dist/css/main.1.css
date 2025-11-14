@@ -96,7 +96,7 @@
   background-repeat: no-repeat;
   background-color: #444;
   background-attachment: fixed;
-  background-image: url(../img/newlg.jpg);
+  background-image: url(../img/portraitLg.jpg);
   border-radius: 50%;
   border: solid 3px #fe015e;
 }
@@ -410,7 +410,7 @@ main#home h1 {
   }
 
   .menu-branding .portrait {
-    background-image: url(../img/newlg.jpg);
+    background-image: url(../img/portraitSm.jpg);
     width: 150px;
     height: 140px;
   }
