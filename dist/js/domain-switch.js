@@ -4,15 +4,15 @@ const domain = window.location.hostname.toLowerCase();
 let firstName = "Aaron";
 let lastName = "Cole";
 let fullName = "Aaron Cole";
-let pageTitle = "Aaron Cole Portfolio";
+let pageTitle = "Aaron Cole's Portfolio";
 let accentColor = "#f7c08a"; // keep close to your theme
 
 // ARROWCOLE DOMAIN
-if (domain.includes("arrowcole.us")) {
+if (domain.includes("test.arrowcole.xyz")) {
   firstName = "Arrow";
   lastName = "Cole";
   fullName = "Arrow Cole";
-  pageTitle = "Arrow Cole Portfolio";
+  pageTitle = "Arrow Cole's Portfolio";
   accentColor = "#22c55e";
 }
 
