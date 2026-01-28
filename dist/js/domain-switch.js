@@ -8,7 +8,7 @@ let pageTitle = "Aaron Cole's Portfolio";
 let accentColor = "#f7c08a"; // keep close to your theme
 
 // ARROWCOLE DOMAIN
-if (domain.includes("test.arrowcole.xyz")) {
+if (domain.includes("https://test.arrowcole.xyz/") || domain.includes("arrowcole.xyz") || domain.includes("arrowcole.us")) {
   firstName = "Arrow";
   lastName = "Cole";
   fullName = "Arrow Cole";
