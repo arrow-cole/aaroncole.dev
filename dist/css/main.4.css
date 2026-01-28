@@ -1,0 +1,22 @@
+/* Robotics CSS */
+
+body { font-family: Arial, sans-serif; padding: 20px; position: relative; }
+h1, h2 { text-align: center; }
+.form-section, .results-section { max-width: 800px; margin: 0 auto; margin-bottom: 30px; }
+.form-section { display: flex; flex-direction: column; align-items: center; }
+.form-section input { width: 200px; }
+input, button, select { padding: 10px; margin: 5px; }
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align: center; }
+th { background-color: #f4f4f4; }
+.reset-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}

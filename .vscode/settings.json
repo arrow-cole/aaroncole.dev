@@ -1,0 +1,13 @@
+{
+    // Server configuration
+    "fiveServer.host": "localhost",
+    "fiveServer.port": 10,
+    "fiveServer.autoStart": true,
+
+    // File watching
+    "files.watcherExclude": {
+        "**/node_modules": true,
+        "**/.git": true,
+        "**/dist": true
+    },
+}
